@@ -151,7 +151,7 @@
     } catch (error) {
       message.textContent = `Submission failed: ${error.message}. Please use a configured direct contact method instead.`;
     } finally {
-      submit.disabled = false; submit.innerHTML = 'Prepare enquiry <span>↗</span>';
+      submit.disabled = false; submit.innerHTML = 'Send Message <span>↗</span>';
     }
   });
 })();
