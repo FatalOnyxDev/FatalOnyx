@@ -78,14 +78,13 @@
   addMethod("DISCORD SERVER", c.discordUrl ? "Join the FatalOnyx Discord" : "", c.discordUrl || "", "◈");
   addMethod("DISCORD USERNAME", c.discordUsername, "", "@ ");
   addMethod("EMAIL", c.email, `mailto:${c.email}`, "✉");
-  addMethod("INSTAGRAM", c.instagram, c.instagram ? `https://www.instagram.com/${c.instagram.replace(/^@/, "")}/` : "", "◎");
   addMethod("GITHUB", c.github ? c.github.replace(/^https?:\/\//, "") : "", c.github || "#", "⌘");
   (c.otherLinks || []).forEach(item => addMethod(item.label || "LINK", item.value, item.url, "↗"));
   if (!methods.children.length) {
     const p = document.createElement("p"); p.className = "muted"; p.textContent = "Use the Discord contact options on this page to get in touch."; methods.appendChild(p);
   }
   const socials = $("#footer-socials");
-  const socialLinks = [c.discordUrl ? ["Discord Server", c.discordUrl] : null, c.github ? ["GitHub", c.github] : null, c.email ? ["Email", `mailto:${c.email}`] : null, c.instagram ? ["Instagram", `https://www.instagram.com/${c.instagram.replace(/^@/, "")}/`] : null].filter(Boolean);
+  const socialLinks = [c.discordUrl ? ["Discord Server", c.discordUrl] : null, c.github ? ["GitHub", c.github] : null, c.email ? ["Email", `mailto:${c.email}`] : null].filter(Boolean);
   if (socialLinks.length) {
     socials.innerHTML = "";
     socialLinks.forEach(([label, url]) => { const a = document.createElement("a"); a.href = url; a.textContent = label; if (url.startsWith("http")) {a.target="_blank";a.rel="noopener noreferrer";} socials.appendChild(a); });
