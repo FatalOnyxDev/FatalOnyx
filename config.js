@@ -18,7 +18,7 @@ window.FATALONYX_CONFIG = {
   },
   // Set to a real form endpoint (for example, your own backend or a form provider endpoint).
   // Until configured, the form will validate and prepare an enquiry but will NOT claim it was sent.
-  formEndpoint: "",
+  formEndpoint: "https://formspree.io/f/mkjrjrgo",
   // Add verified projects here. Example object is documented in README.md.
   projects: [],
   // Add verified timeline entries here. See README.md.
