@@ -12,7 +12,8 @@ window.FATALONYX_CONFIG = {
   contact: {
     discordUsername: "fatalonyx_",
     discordUrl: "https://discord.gg/pwmBZge27d",
-    email: "",
+    email: "fatalonyx24@gmail.com",
+    instagram: "FatalOnyxDev",
     github: "",
     otherLinks: []
   },
